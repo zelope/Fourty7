@@ -1,0 +1,36 @@
+1. conda를 통해 가상환경 생성
+conda create -n envname python=3.8 (가상환경 만들기)
+
+2. ctrl + shift + P 를 통해 생성한 가상환경 인터프리터로 설정
+
+3. terminal도 가상환경 접속
+conda activate envname (가상환경 실행하기)
+
+3+a 오류 발생시
+
+ljg98@my-laptop MINGW64 ~/FastC/Fourty7 (main)
+$ conda activate Fourty7
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+If using 'conda activate' from a batch script, change your
+invocation to 'CALL conda.bat activate'.
+
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - cmd.exe
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+이런 오류가 발생하면
+source ~/anaconda3/etc/profile.d/conda.sh
