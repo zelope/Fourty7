@@ -20,7 +20,7 @@ with open(path, 'rb') as img:
 # base64 디코딩
 decoded = base64.decodebytes(encoded)
 
-file_path = os.path.join(script_dir, "result_img", "decode.png")
+file_path = os.path.join(script_dir, "result", "decode.png")
 
 with open(file_path, 'wb') as image_file:
     image_file.write(decoded)
